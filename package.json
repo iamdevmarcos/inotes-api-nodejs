@@ -1,0 +1,36 @@
+{
+  "name": "inotes-api-nodejs",
+  "version": "1.0.0",
+  "description": "api for the inotes app, with node.js, ts and prisma",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -e ts,json src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamdevmarcos/inotes-api-nodejs.git"
+  },
+  "author": "marcosdev.me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamdevmarcos/inotes-api-nodejs/issues"
+  },
+  "homepage": "https://github.com/iamdevmarcos/inotes-api-nodejs#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.11",
+    "@types/validator": "^13.7.0",
+    "prisma": "^3.6.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}
