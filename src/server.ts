@@ -3,6 +3,8 @@ import path from 'path';
 import dotenv from 'dotenv';
 import cors from 'cors';
 
+import apiRoutes from './routes/api';
+
 dotenv.config();
 
 const app = express();
@@ -14,6 +16,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get('/ping', (req: Request, res: Response) => res.json({ pong: true }));
+
+app.use('/', apiRoutes);
 
 app.use((req: Request, res: Response) => {
     res.status(404).json({ error: 'endpoint not found...' });
