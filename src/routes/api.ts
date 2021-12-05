@@ -12,7 +12,7 @@ router.delete('/category/:id', CategoryController.remove);
 router.get('/notes', NoteController.all);
 router.get('/note/:id', NoteController.get);
 router.post('/note', NoteController.create);
-router.put('/note/:id', NoteController.done);
+router.put('/note/:id', NoteController.toggleDone);
 router.delete('/note/:id', NoteController.remove);
 
 export default router;
