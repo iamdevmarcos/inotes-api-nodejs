@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "api for the inotes app, with node.js, ts and prisma",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
+    "start": "node dist/server.js",
+    "postinstall": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon -e ts,json src/server.ts"
   },
